@@ -277,12 +277,31 @@
     document.getElementById("basket-total").textContent = money(min, max > min ? max : null);
   }
 
+  let toastTimer;
+  function addedFeedback(btn, qty) {
+    const p = catalogData.products.find((x) => x.slug === btn.dataset.add);
+    if (!btn.dataset.label) btn.dataset.label = btn.innerHTML;
+    btn.innerHTML = "Added ✓"; clearTimeout(btn._t);
+    btn._t = setTimeout(() => (btn.innerHTML = btn.dataset.label), 1200);
+    const fab = document.getElementById("basket-open");
+    fab?.animate([{ transform: "scale(1)" }, { transform: "scale(1.12)" }, { transform: "scale(1)" }], { duration: 300 });
+    let t = document.getElementById("basket-toast");
+    if (!t) {
+      document.body.insertAdjacentHTML("beforeend", '<div id="basket-toast" role="status" aria-live="polite" class="fixed bottom-20 left-4 right-4 z-50 mx-auto hidden max-w-sm items-center justify-between gap-3 rounded-lg bg-ink px-4 py-3 text-sm text-white shadow-2xl sm:left-auto sm:right-5 sm:mx-0"><span id="basket-toast-text"></span><button type="button" data-open-basket class="shrink-0 font-semibold underline">View basket</button></div>');
+      t = document.getElementById("basket-toast");
+    }
+    document.getElementById("basket-toast-text").textContent = `${qty} × ${p ? p.name : "item"} added · ${basketQty()} in basket`;
+    t.classList.remove("hidden"); t.classList.add("flex");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { t.classList.add("hidden"); t.classList.remove("flex"); }, 2500);
+  }
+
   function openBasket() { document.getElementById("basket-wrap")?.classList.remove("hidden"); document.body.style.overflow = "hidden"; }
   function closeBasket() { document.getElementById("basket-wrap")?.classList.add("hidden"); document.body.style.overflow = ""; }
 
   document.addEventListener("click", (e) => {
     const add = e.target.closest("[data-add]");
-    if (add) { const qty = Math.max(1, parseInt(document.getElementById(add.dataset.qtySource)?.value || "1", 10)); basket[add.dataset.add] = (basket[add.dataset.add] || 0) + qty; saveBasket(); renderBasket(); openBasket(); return; }
+    if (add) { const qty = Math.max(1, parseInt(document.getElementById(add.dataset.qtySource)?.value || "1", 10)); basket[add.dataset.add] = (basket[add.dataset.add] || 0) + qty; saveBasket(); renderBasket(); addedFeedback(add, qty); return; }
     const inc = e.target.closest("[data-cart-inc]"), dec = e.target.closest("[data-cart-dec]"), rem = e.target.closest("[data-cart-remove]");
     if (inc) basket[inc.dataset.cartInc]++; if (dec) basket[dec.dataset.cartDec]--; if (rem) delete basket[rem.dataset.cartRemove];
     if (dec && basket[dec.dataset.cartDec] <= 0) delete basket[dec.dataset.cartDec];
