@@ -1,0 +1,56 @@
+{
+  "_note":"Muskat Groceries October 2026 catalogue. Prices are KES and may change with market availability.",
+  "categories":[
+    ["fruits","Fruits"],["herbs","Herbs"],["vegetables","Vegetables"],["chilies","Chilies"],
+    ["mushrooms","Mushrooms"],["greens","Greens"],["packets","Packets"],["lettuce","Types of Lettuce"]
+  ],
+  "groups":{
+    "fruits":[
+      ["Passion Fruit",330,350,"1 kg","fruit"],["Yellow Passion Fruit",300,350,"1 kg","fruit"],
+      ["Seedless Red Grapes",430,null,"1 kg","fruit"],["Seedless Green Grapes",500,null,"1 kg","fruit"],
+      ["Kiwi Fruit",630,null,"6 pieces","fruit"],["Local Oranges",100,null,"1 kg","citrus"],["Pixies",220,null,"1 kg","citrus"],
+      ["Red Apple",40,null,"piece","fruit"],["Green Apple",40,null,"piece","fruit"],["Avocado",40,50,"piece","avocado"],
+      ["Ripe Bananas",120,null,"dozen","banana"],["Uganda Pineapple",200,null,"piece","fruit"],["Raspberries",250,null,"125 g","berry"],
+      ["Strawberries",230,null,"punnet","berry"],["Blueberries",270,null,"125 g","berry"],["Blackberries",250,null,"150 g","berry"],
+      ["Pomegranate",450,550,"1 kg","fruit"],["Dragon Fruit",700,850,"1 kg","fruit"],["Tree Tomatoes",250,null,"1 kg","tomato"],
+      ["Apple Mangoes",170,null,"1 kg","fruit"],["Watermelon",70,null,"1 kg","melon","Whole watermelons start from approximately 8 kg."],
+      ["Sweet Melon",150,null,"1 kg","melon"],["Honeydew Melon",150,null,"1 kg","melon"],["Pawpaw",150,null,"1 kg","fruit"],
+      ["Coconut",80,null,"piece","fruit"],["Sweet Banana Bunch",160,null,"bunch","banana"],["Imported Pears",500,null,"1 kg","fruit"],
+      ["Sweet Tangerines",550,null,"1 kg","citrus"],["Jackfruit",150,null,"punnet","fruit"],
+      ["Local Plums",150,null,"1 kg","fruit","Not currently in season.",false],["Imported Plums",650,null,"punnet","fruit"],
+      ["Imported Peaches",650,null,"750 g","fruit"],["Imported Lemons",450,null,"1 kg","citrus"],["Imported Oranges",300,null,"1 kg","citrus"],
+      ["Beetroot",150,null,"1 kg","root"]
+    ],
+    "herbs":[["Dill",60,null,"bunch","greens"],["Rosemary",40,null,"bunch","greens"],["Parsley",50,null,"bunch","greens"],["Mint",40,null,"bunch","greens"],["Thyme",50,null,"bunch","greens"],["Sage",60,null,"bunch","greens"],["Chives",60,null,"bunch","greens"]],
+    "vegetables":[
+      ["Tray of Eggs",500,null,"tray","mushroom","Comes with a crate."],["Plantain",200,null,"1 kg","banana"],["Asparagus",1000,null,"1 kg","greens","Market price changes frequently."],
+      ["Bok Choy",150,null,"1 kg","greens"],["Eggplant",130,null,"1 kg","eggplant"],["Cucumber",120,null,"1 kg","courgette"],["English Cucumber",120,null,"1 kg","courgette"],
+      ["Courgette",120,null,"1 kg","courgette"],["Peeled Minji",330,350,"1 kg","peas"],["Coriander / Dania",10,null,"bunch","greens"],
+      ["Carrots",90,null,"1 kg","root"],["Coloured Capsicum",230,null,"1 kg","capsicum"],["Green Capsicum",130,null,"1 kg","capsicum"],
+      ["French Beans",150,null,"1 kg","peas"],["Okra",170,null,"1 kg","peas"],["Matoke",150,null,"dozen","banana"],["Tomatoes",90,null,"1 kg","tomato"],
+      ["Red Onions",100,null,"1 kg","onion"],["Leeks",180,null,"1 kg","greens"],["White Onions",130,null,"1 kg","onion"],
+      ["Selected Local Potatoes",100,null,"1 kg","root"],["Irish Potatoes",130,null,"1 kg","root"],["Local Lemons",130,null,"1 kg","citrus"],
+      ["Limes",150,null,"1 kg","citrus"],["Local Garlic",500,null,"1 kg","onion"],["Imported Garlic",450,null,"1 kg","onion"],["Ginger",200,null,"1 kg","root"],
+      ["Cauliflower",250,300,"1 kg","cabbage"],["Broccoli",300,350,"1 kg","broccoli"],["Red / Purple Cabbage",130,null,"1 kg","cabbage"],
+      ["Medium Cabbage",80,null,"piece","cabbage"],["Chinese Cabbage",100,null,"1 kg","cabbage"],["Cassava",120,null,"1 kg","root"],
+      ["Butternut",130,null,"1 kg","pumpkin"],["Nduma / Arrowroot",180,null,"1 kg","root"],["Sweet Potatoes",110,null,"1 kg","root"]
+    ],
+    "chilies":[["Green Chilies",65,null,"300 g","capsicum"],["Red Chilies",65,null,"300 g","capsicum"],["Demon Chilies",750,null,"1 kg","capsicum"],["Green Moraa",300,null,"1 kg","capsicum"],["Red Moraa",300,null,"1 kg","capsicum"],["Small Moraa",300,null,"1 kg","capsicum"],["Bitter Gourd",300,null,"1 kg","courgette"]],
+    "mushrooms":[["Button Mushrooms",350,null,"punnet","mushroom"],["Oyster Mushrooms",250,null,"punnet","mushroom"],["Portobello Mushrooms",400,null,"punnet","mushroom"]],
+    "greens":[["Celery",150,null,"1 kg","greens"],["Sukuma Wiki",35,null,"bunch","greens"],["Spinach",35,null,"bunch","greens"],["Terere",35,null,"bunch","greens"],["Managu",35,null,"bunch","greens"],["Kanzera",35,null,"bunch","greens"]],
+    "packets":[["Tenderstem Broccoli",120,null,"packet","broccoli"],["Sugar Snaps",100,null,"packet","peas"],["Snow Peas",100,null,"packet","peas"],["Sweet Corn",150,null,"packet","corn"],["Sweet Corn Kernels",150,null,"packet","corn"],["Salad Onions",120,null,"packet","onion"],["Baby Spinach",150,null,"packet","greens"],["Cherry Tomatoes",120,null,"packet","tomato"]],
+    "lettuce":[["Romaine Lettuce",120,null,"piece","greens"],["Iceberg Lettuce",70,null,"piece","greens"],["Fresh Mixed Lettuces",120,null,"packet","greens"],["Rocket Salad",120,null,"packet","greens"]]
+  },
+  "images":{
+    "fruit":"images/64f99b0b9025f3e47417ac35_product-thumb-7.png","citrus":"images/64cde8ae7c4a50c74063e8f0_best-deal-1.png",
+    "avocado":"images/64cdc4d294461659b9dc5a0a_avocado.png","banana":"images/64cb7dfc8ab25fa11f2b8bda_best-seller-product-thumb-1.png",
+    "berry":"images/64f99aa4221ce9ae208e8d85_product-thumb-6.png","melon":"images/64d30ae814d7241a1fd82bcc_best-deal-main-img-2.png",
+    "tomato":"images/64f99a5d1af5b5d0e1eb22cc_product-thumb-4.png","root":"images/64cb7c4b796a3d49ade5953e_trending-product-thumb-1.png",
+    "greens":"images/64f99dd4012119ea612a8f3e_product-thumb-11.png","mushroom":"images/64f99cf0c8931dba57a929c8_product-thumb-9.png",
+    "eggplant":"images/64f99b35221ce9ae208f4f20_product-thumb-8.png","courgette":"images/64cde8ae7c4a50c74063e8f0_best-deal-1.png",
+    "peas":"images/64f99a84e676e454b20db826_product-thumb-5.png","capsicum":"images/64cb7cfddae4f2e5a0558fce_trending-product-thumb-3.png",
+    "onion":"images/64cb7440923ec66dd91a50b3_onion.png","cabbage":"images/64f9998a1af5b5d0e1ea25ee_product-thumb-2.png",
+    "broccoli":"images/64f99a3d5f3e55539a6ed121_product-thumb-3.png","pumpkin":"images/64cb7cc21d409a76a3fec7b1_trending-product-thumb-2.png",
+    "corn":"images/64f9992fccad483ccbf2f9e7_product-thumb-1.png"
+  }
+}

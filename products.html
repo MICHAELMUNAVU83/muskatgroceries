@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en-KE" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop fresh fruits & vegetables — Muskat Groceries</title>
+    <meta name="description" content="Muskat Groceries — your mama mboga, now online. Fresh, organic and exotic fruits and vegetables delivered to homes, offices and hotels in Nairobi. Call or WhatsApp 0796 110 826." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0B7A23" />
+    <link rel="canonical" href="https://muskatgroceries.com/products.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Muskat Groceries" />
+    <meta property="og:locale" content="en_KE" />
+    <meta property="og:url" content="https://muskatgroceries.com/products.html" />
+    <meta property="og:title" content="Shop fresh fruits & vegetables — Muskat Groceries" />
+    <meta property="og:description" content="Muskat Groceries — your mama mboga, now online. Fresh, organic and exotic fruits and vegetables delivered to homes, offices and hotels in Nairobi. Call or WhatsApp 0796 110 826." />
+    <meta property="og:image" content="https://muskatgroceries.com/images/muskat-logo.png" />
+    <meta property="og:image:alt" content="Muskat Groceries — Home of exotic fruits &amp; vegetables" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shop fresh fruits & vegetables — Muskat Groceries" />
+    <meta name="twitter:description" content="Muskat Groceries — your mama mboga, now online. Fresh, organic and exotic fruits and vegetables delivered to homes, offices and hotels in Nairobi. Call or WhatsApp 0796 110 826." />
+    <meta name="twitter:image" content="https://muskatgroceries.com/images/muskat-logo.png" />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sacramento&display=swap"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "1rem",
+            screens: { "2xl": "1200px" },
+          },
+          extend: {
+            colors: {
+              brand: {
+                DEFAULT: "#004c3f",
+                dark: "#003027",
+                soft: "#e8eee4",
+                tint: "#f6faf2",
+              },
+              ink: "#232424",
+              body: "#545454",
+              mist: "#f9f9f9",
+            },
+            fontFamily: {
+              sans: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
+              script: ["Sacramento", "cursive"],
+              serif: ['Poppins', "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  
+    <style>
+      .filter-pill[aria-current] span { color: inherit; opacity: 0.7; }
+      .product-card[hidden] { display: none; } /* beats the card's `flex` utility */
+      .filter-pill[aria-current] { background: #004c3f; border-color: #004c3f; color: #fff; box-shadow: 0 8px 20px rgba(0, 76, 63, 0.16); }
+      .category-scroll { scrollbar-width: none; }
+      .category-scroll::-webkit-scrollbar { display: none; }
+      /* list view (CSS-only toggle) */
+      body:has(#view-list:checked) .catalog { grid-template-columns: 1fr; }
+      @media (min-width: 640px) {
+        body:has(#view-list:checked) .product-card { flex-direction: row; text-align: left; }
+        body:has(#view-list:checked) .card-media { width: 220px; flex-shrink: 0; }
+        body:has(#view-list:checked) .card-body { align-items: flex-start; padding: 2rem; }
+      }
+      body:has(#view-list:checked) label[for="view-list"],
+      body:not(:has(#view-list:checked)) label[for="view-grid"] { color: #004c3f; background: #e8eee4; }
+    </style>
+    <script src="js/catalog.js" defer></script>
+    <style>
+      .font-serif { font-weight: 700; letter-spacing: -0.01em; }
+      h1.font-serif, h2.font-serif { font-weight: 800; }
+    </style>
+  </head>
+  <body data-page="catalog" class="bg-white font-sans text-[17px] leading-[30px] text-body antialiased">
+    <header>
+      <!-- Top bar -->
+      <div class="bg-brand py-3 text-white">
+        <div class="container flex items-center justify-between gap-4">
+          <p class="flex items-center gap-2 text-sm leading-6">
+            <svg
+              class="h-4 w-4 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+            </svg>
+            Fresh fruits &amp; vegetables delivered to your door
+          </p>
+          <div class="flex items-center gap-5">
+            <nav aria-label="Social" class="hidden items-center gap-4 sm:flex">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+                class="opacity-80 transition hover:opacity-100"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
+                class="opacity-80 transition hover:opacity-100"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+                class="opacity-80 transition hover:opacity-100"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/254796110826"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+                class="opacity-80 transition hover:opacity-100"
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                </svg>
+              </a>
+            </nav>
+            <span
+              class="hidden h-4 w-px bg-white/30 sm:block"
+              aria-hidden="true"
+            ></span>
+            <a
+              href="tel:+254796110826"
+              aria-label="Log in"
+              class="opacity-80 transition hover:opacity-100"
+            >
+              <svg
+                class="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main nav -->
+      <div class="relative border-b border-black/5 bg-white py-5">
+        <div class="container flex items-center justify-between gap-6">
+          <input type="checkbox" id="nav-toggle" class="peer hidden" />
+
+          <!-- Mobile toggle -->
+          <label
+            for="nav-toggle"
+            aria-label="Toggle menu"
+            class="order-1 cursor-pointer p-1 text-ink lg:hidden"
+          >
+            <svg
+              class="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </label>
+
+          <!-- Nav menu -->
+          <nav
+            aria-label="Main"
+            class="absolute inset-x-0 top-full z-40 order-2 hidden border-t border-black/5 bg-white px-4 py-4 shadow-lg peer-checked:block lg:static lg:order-1 lg:flex lg:border-0 lg:p-0 lg:shadow-none"
+          >
+            <ul class="flex flex-col gap-1 lg:flex-row lg:gap-8">
+              <li class="group relative">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between gap-1.5 py-2 text-base text-ink transition hover:text-brand lg:py-0"
+                >
+                  Home
+                  <svg
+                    class="h-4 w-4 transition group-hover:rotate-180"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+                <div
+                  class="hidden pb-2 pl-4 group-focus-within:block group-hover:block lg:absolute lg:left-0 lg:top-full lg:z-50 lg:min-w-[220px] lg:pt-4 lg:pl-0"
+                >
+                  <div class="flex flex-col bg-white lg:py-3 lg:shadow-xl">
+                    <a
+                      href="index.html"
+                      class="px-0 py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Home</a
+                    >
+                    <a
+                      href="index.html"
+                      aria-current="page"
+                      class="px-0 py-1.5 text-[15px] font-medium text-brand lg:px-5"
+                      >Popular Right Now</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="group relative">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between gap-1.5 py-2 text-base text-ink transition hover:text-brand lg:py-0"
+                >
+                  Shop <svg
+                    class="h-4 w-4 transition group-hover:rotate-180"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+                <div
+                  class="hidden pb-2 pl-4 group-focus-within:block group-hover:block lg:absolute lg:left-0 lg:top-full lg:z-50 lg:min-w-[220px] lg:pt-4 lg:pl-0"
+                >
+                  <div class="flex flex-col bg-white lg:py-3 lg:shadow-xl">
+                    <a
+                      href="products.html"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >All Produce</a
+                    >
+                    <a
+                      href="products.html"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Fresh Fruits</a
+                    >
+                    <a
+                      href="products.html"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Fresh Vegetables</a
+                    >
+                    <a
+                      href="products.html"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Exotic Finds</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="group relative">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between gap-1.5 py-2 text-base text-ink transition hover:text-brand lg:py-0"
+                >
+                  About <svg
+                    class="h-4 w-4 transition group-hover:rotate-180"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+                <div
+                  class="hidden pb-2 pl-4 group-focus-within:block group-hover:block lg:absolute lg:left-0 lg:top-full lg:z-50 lg:min-w-[220px] lg:pt-4 lg:pl-0"
+                >
+                  <div class="flex flex-col bg-white lg:py-3 lg:shadow-xl">
+                    <a
+                      href="index.html#our-story"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Our Story</a
+                    >
+                    <a
+                      href="https://wa.me/254796110826"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Hotel &amp; Office Deliveries</a
+                    >
+                    <a
+                      href="/blog"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >How It Works</a
+                    >
+                    <a
+                      href="/testimonials"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Delivery &amp; FAQ</a
+                    >
+                    <a
+                      href="tel:+254796110826"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Call 0796 110 826</a
+                    >
+                    <a
+                      href="/sign-up"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >WhatsApp Us</a
+                    >
+                    <a
+                      href="/reset-password"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Request a Quote</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="group relative">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between gap-1.5 py-2 text-base text-ink transition hover:text-brand lg:py-0"
+                >
+                  Help <svg
+                    class="h-4 w-4 transition group-hover:rotate-180"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+                <div
+                  class="hidden pb-2 pl-4 group-focus-within:block group-hover:block lg:absolute lg:left-0 lg:top-full lg:z-50 lg:min-w-[220px] lg:pt-4 lg:pl-0"
+                >
+                  <div class="flex flex-col bg-white lg:py-3 lg:shadow-xl">
+                    <a
+                      href="index.html#faq"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Delivery Areas</a
+                    >
+                    <a
+                      href="index.html#faq"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Delivery Fees</a
+                    >
+                    <a
+                      href="index.html#faq"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Substitutions</a
+                    >
+                    <a
+                      href="index.html#faq"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Privacy Policy</a
+                    >
+                    <a
+                      href="index.html#faq"
+                      class="py-1.5 text-[15px] text-body transition hover:text-brand lg:px-5"
+                      >Terms &amp; Returns</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="order-2 flex items-center gap-2"
+            aria-label="Muskat Groceries home"
+          >
+            <img
+              src="images/muskat-logo.png"
+              alt="Muskat Groceries"
+              class="h-12 w-auto rounded-md bg-white lg:h-16"
+            />
+          </a>
+
+          <!-- Actions -->
+          <div class="order-3 flex items-center gap-5">
+            <form
+              action="products.html"
+              role="search"
+              class="relative hidden md:block"
+            >
+              <label for="site-search" class="sr-only">Search products</label>
+              <input
+                id="site-search"
+                type="search"
+                name="q"
+                maxlength="256"
+                required
+                placeholder="Search fruits, greens, and more…"
+                class="h-11 w-56 border border-black/10 bg-mist pl-4 pr-11 text-[15px] text-ink placeholder:text-body/70 focus:border-brand focus:outline-none"
+              />
+              <button
+                type="submit"
+                aria-label="Search"
+                class="absolute inset-y-0 right-0 grid w-11 place-items-center text-ink transition hover:text-brand"
+              >
+                <svg
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </button>
+            </form>
+            <button
+              type="button"
+              data-open-basket
+              aria-label="Basket, 0 items"
+              class="flex items-center gap-2 text-base text-ink transition hover:text-brand"
+            >
+              <svg
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 0 1-8 0" />
+              </svg>
+              <span class="hidden sm:inline">Basket (<span data-basket-count>0</span>)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="relative overflow-hidden bg-mist py-20 lg:py-28">
+        <div class="container relative z-10">
+          <h1 class="mb-5 font-serif text-[40px] leading-[1.1] text-brand sm:text-6xl lg:text-7xl">Shop Fresh Produce</h1>
+          <p class="max-w-xl">Fresh, organic and exotic fruits and vegetables for your home, office or hotel. Prices in KES are confirmed when you order.</p>
+        </div>
+        <img src="images/64d1b45f798499b7a12c19cc_hero-main-img-two.png" alt="" class="absolute -right-10 top-1/2 hidden h-80 w-auto -translate-y-1/2 object-contain lg:block xl:right-24" />
+        <img src="images/64d1c4c761801c49fa047a5b_hero-shape-img-3.png" alt="" class="absolute -bottom-10 left-0 hidden w-40 lg:block" />
+      </section>
+
+      <section class="py-20 lg:py-[120px]">
+        <div id="catalog-root" class="container">
+          <div class="mb-10 rounded-2xl border border-black/5 bg-brand-tint p-4 shadow-sm sm:p-5">
+            <div class="mb-4 flex items-center justify-between gap-4">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand">Browse fresh produce</p>
+                <h2 class="font-serif text-2xl leading-tight text-ink">Shop by category</h2>
+              </div>
+              <div class="flex shrink-0 items-center gap-1 rounded-xl border border-black/5 bg-white p-1 text-body/35 shadow-sm" aria-label="Choose product view">
+              <input type="radio" name="view" id="view-grid" class="sr-only" checked />
+              <label for="view-grid" class="cursor-pointer rounded-lg p-2 transition hover:bg-mist hover:text-ink" title="Grid view"><span class="sr-only">Grid view</span><svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h5v5H3zM10 3h4v5h-4zM16 3h5v5h-5zM3 10h5v4H3zM10 10h4v4h-4zM16 10h5v4h-5zM3 16h5v5H3zM10 16h4v5h-4zM16 16h5v5h-5z"/></svg></label>
+              <input type="radio" name="view" id="view-list" class="sr-only" />
+              <label for="view-list" class="cursor-pointer rounded-lg p-2 transition hover:bg-mist hover:text-ink" title="List view"><span class="sr-only">List view</span><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg></label>
+              </div>
+            </div>
+            <nav id="category-filter" aria-label="Filter by category" class="category-scroll -mx-1 flex items-center gap-2 overflow-x-auto px-1 pb-1"></nav>
+          </div>
+
+          <ul class="catalog grid gap-[30px] sm:grid-cols-2 lg:grid-cols-4" id="catalog" aria-live="polite"></ul>
+        </div>
+      </section>
+      <!-- ============ SERVICE FEATURES ============ -->
+      <section class="border-t border-black/5 py-16">
+        <ul
+          class="container grid gap-10 md:grid-cols-3 md:divide-x md:divide-black/10"
+        >
+          <li class="flex items-start gap-5 md:justify-center md:px-6">
+            <img
+              src="images/64e965688f3236f85b9674aa_feature-1.png"
+              alt=""
+              class="mt-1 h-14 w-14 shrink-0 object-contain"
+            />
+            <div>
+              <h3 class="font-serif text-2xl text-ink">Home, Office &amp; Hotel</h3>
+              <p class="text-base leading-7">
+                Fresh produce, wherever you need it.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-5 md:justify-center md:px-6">
+            <img
+              src="images/64e965a0335d3c7bcc37f62b_feature-2.png"
+              alt=""
+              class="mt-1 h-14 w-14 shrink-0 object-contain"
+            />
+            <div>
+              <h3 class="font-serif text-2xl text-ink">Delivery Fee</h3>
+              <p class="text-base leading-7">
+                Delivery fee confirmed before your order is final.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start gap-5 md:justify-center md:px-6">
+            <img
+              src="images/64e965ac18186f8589f9e3c8_feature-3.png"
+              alt=""
+              class="mt-1 h-14 w-14 shrink-0 object-contain"
+            />
+            <div>
+              <h3 class="font-serif text-2xl text-ink">Call or WhatsApp</h3>
+              <p class="text-base leading-7">
+                Questions? Reach us on 0796 110 826.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="text-white">
+      <div
+        class="relative bg-brand bg-[url('images/64cb7a93ea43d08fe3ef5924_footer-bg.jpg')] bg-cover bg-center py-16 lg:py-24"
+      >
+        <div
+          class="container grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.4fr]"
+        >
+          <div>
+            <a
+              href="index.html"
+              class="mb-8 inline-flex items-center gap-2"
+              aria-label="Muskat Groceries home"
+            >
+              <img
+                src="images/muskat-logo.png"
+                alt="Muskat Groceries"
+                class="h-12 w-auto rounded-md bg-white lg:h-16"
+              />
+            </a>
+            <p class="font-serif text-2xl">Contact</p>
+            <a
+              href="tel:+254796110826"
+              class="mb-2 block text-white/90 transition hover:text-white"
+              >Call or WhatsApp 0796 110 826</a
+            >
+            <a
+              href="https://chat.whatsapp.com/Jf5cRHE943U7ep9vPsZjAs"
+              target="_blank"
+              rel="noopener"
+              class="mb-2 block text-white/90 underline-offset-4 transition hover:text-white hover:underline"
+              >Join our WhatsApp Community</a
+            >
+            <address class="not-italic text-white/80">
+              Nairobi, Kenya
+            </address>
+          </div>
+
+          <nav aria-labelledby="ft-cat">
+            <h3 id="ft-cat" class="mb-5 font-serif text-2xl lg:mb-8">
+              Categories
+            </h3>
+            <ul class="space-y-2 text-white/80 lg:space-y-3.5">
+              <li>
+                <a
+                  href="products.html#fruits"
+                  class="transition hover:text-white"
+                  >Fresh Fruits</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html#vegetables"
+                  class="transition hover:text-white"
+                  >Fresh Vegetables</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html#exotic-produce"
+                  class="transition hover:text-white"
+                  >Exotic Finds</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html#vegetables"
+                  class="transition hover:text-white"
+                  >Kitchen Essentials</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="transition hover:text-white"
+                  >All Produce</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="ft-links">
+            <h3 id="ft-links" class="mb-5 font-serif text-2xl lg:mb-8">
+              Muskat
+            </h3>
+            <ul class="space-y-2 text-white/80 lg:space-y-3.5">
+              <li>
+                <a
+                  href="index.html#faq"
+                  class="transition hover:text-white"
+                  >Delivery Areas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#faq"
+                  class="transition hover:text-white"
+                  >Delivery Fees</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#faq"
+                  class="transition hover:text-white"
+                  >Substitutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#faq"
+                  class="transition hover:text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#faq"
+                  class="transition hover:text-white"
+                  >Terms &amp; Returns</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <h3 class="mb-5 font-serif text-2xl lg:mb-8">Good things are growing</h3>
+            <p class="mb-6 text-white/80">
+              Hear about new arrivals and seasonal picks.
+            </p>
+            <form method="get" class="relative">
+              <label for="newsletter-email" class="sr-only"
+                >Email address</label
+              >
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                required
+                maxlength="256"
+                placeholder="Your email address"
+                class="h-14 w-full bg-white pl-5 pr-20 text-base text-ink placeholder:text-body/70 focus:outline-none focus:ring-2 focus:ring-brand-soft"
+              />
+              <button
+                type="submit"
+                aria-label="Subscribe"
+                class="absolute right-1.5 top-1/2 grid h-11 w-16 -translate-y-1/2 place-items-center bg-brand text-white transition hover:bg-ink"
+              >
+                <svg
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-brand-dark py-4">
+        <div
+          class="container flex flex-col items-center justify-between gap-3 text-center text-[15px] text-white/80 sm:flex-row sm:text-left"
+        >
+          <p>
+            Copyright © 2026 Muskat Groceries | Your mama mboga, now online | Template by
+            <a
+              href="https://brandbes.com/"
+              target="_blank"
+              rel="noopener"
+              class="text-white underline-offset-4 hover:underline"
+              >Brandbes</a
+            >
+          </p>
+          <img
+            src="images/64d0859a46ac1d49f5f50094_payment.png"
+            alt="Payment options confirmed with your order"
+            class="h-6 w-auto"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
